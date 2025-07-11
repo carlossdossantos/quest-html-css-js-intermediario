@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScrip Intermediário</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+
+        <section class="formulario">
+
+            <div class="conteudo-esquerdo">
+
+                <h2 class="duvida">FICOU COM DÚVIDA? NOS MANDE UMA MENSAGEM!</h2>
+
+                <p class="texto">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em
+                    contato em menos de 24h.</p>
+
+            </div>
+
+            <div class="conteudo-direito">
+
+                <form action="">
+
+                    <input type="text" class="campo" name="nome" id="nome" placeholder="Nome Completo *">
+
+                    <p class="invalido">campo obrigatório</p>
+
+                    <input type="email" class="campo" name="email" id="email" placeholder="Email *">
+
+                    <p class="invalido">campo obrigatório</p>
+
+                    <input type="tel" class="campo" name="tel" id="tel" placeholder="Telefone *">
+
+                    <p class="invalido">campo obrigatório</p>
+
+                    <textarea name="mensagem" class="campo mensagem" id="mensagem" placeholder="Mensagem *"></textarea>
+                    <p class="invalido">campo obrigatório</p>
+
+                    <p class="texto">*campos obrigatórios</p>
+
+                    <input type="submit" value="Enviar" class="campo botao-enviar">
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="formulario.js"></script>
+
+</body>
+
+</html>
