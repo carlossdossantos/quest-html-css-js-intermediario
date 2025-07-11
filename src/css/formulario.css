@@ -1,5 +1,6 @@
 body{
     background-image: url(../imagens/bg-repeat.jpg);
+    background-repeat: repeat-x;
 }
 
 main{
