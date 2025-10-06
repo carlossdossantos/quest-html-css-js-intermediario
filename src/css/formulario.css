@@ -1,138 +1,39 @@
-body {
-  background-image: url(../imagens/bg-repeat.jpg);
-  background-size: 100% 100%; 
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
+*{
+  margin: 0;
+  padding: 0;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; 
-  padding: 20px; 
+.cabecalho{
+  background-color: #FF8200;
+  grid-area: header;
 }
 
-.formulario {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  max-width: 900px; 
-  width: 100%; 
+.menu{
+  background-color: #7FC78E;
+  grid-area: menu;
 }
 
-.conteudo-esquerdo {
-  width: 40%; 
-  min-width: 300px;
-  max-width: 400px; 
-  margin-right: 20px;
+.secao-principal{
+  background-color: #FFA9C0;
+  grid-area: content;
 }
 
-.conteudo-esquerdo .duvida {
-  font-size: 2rem;
-  font-weight: 900;
-  color: #fff;
-  margin-bottom: 11px;
+.aside{
+  background-color: #FFE200;
+  grid-area: aside;
 }
 
-.conteudo-esquerdo .texto {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #fff;
+.rodape{
+  background-color: #F48D76;
+  grid-area: footer;
 }
 
-.conteudo-direito {
-  width: 60%; 
-  min-width: 320px;
-  max-width: 500px; 
-  background-color: #fff;
-  padding: 20px;
+.container{
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "menu content aside"
+  "footer footer footer";
+  grid-template-columns: 250px 1fr 250px;
+  grid-template-rows: 50px 800px 50px;
 }
-
-.conteudo-direito .campo,
-.conteudo-direito .botao,
-.conteudo-direito .mensagem {
-  width: 100%; 
-  box-sizing: border-box;
-}
-
-.conteudo-direito .campo,
-.conteudo-direito .botao {
-  height: 35px;
-  border-radius: 5px;
-  padding-left: 10px;
-  margin-bottom: 15px;
-  border: 2px solid #000;
-}
-
-.conteudo-direito .invalido {
-  color: #F52E2E;
-  display: none;
-  font-size: 0.8rem;
-  font-weight: 400;
-}
-
-.conteudo-direito .mensagem {
-  height: 100px;
-  resize: none;
-  padding-left: 10px;
-  margin-bottom: 16px;
-  border-radius: 5px;
-  border: 2px solid #000;
-}
-
-.conteudo-direito .texto {
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.conteudo-direito .botao-enviar {
-  background-color: #3CCC87;
-  border: none;
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 700;
-  cursor: pointer;
-  outline: 0;
-}
-
-.conteudo-direito .botao-enviar:hover {
-  box-shadow: 0px 8px 16px rgba(60, 204, 135, 0.6);
-}
-
-.conteudo-direito .invalido.mostrar {
-  display: block;
-  margin-bottom: 15px;
-}
-
-.conteudo-direito .erro {
-  border: 2px solid #F52E2E;
-  margin-bottom: 0px;
-}
-
-.conteudo-direito .valido {
-  border: 2px solid #0CC22B;
-}
-
-/* --- Media Queries --- */
-
-
-@media screen and (max-width: 768px) {
-
-  .formulario {
-    flex-direction: column; 
-  }
-
-  .conteudo-esquerdo,
-  .conteudo-direito {
-    width: 100%; 
-    margin-right: 0;
-  }
-
-  .conteudo-esquerdo {
-    margin-bottom: 20px;
-    text-align: center; 
-  }
-} 
